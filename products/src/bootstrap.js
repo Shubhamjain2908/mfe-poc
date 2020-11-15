@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-const monut = el => {
+const mount = el => {
     let products = '';
 
     for (let i = 0; i < 5; i++) {
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') {
     // Assuming our container doesnt have an element with id 'dev-products...'
     if (el) {
         // we are probably running in isolation
-        monut(el);
+        mount(el);
     }
 }
 
@@ -31,4 +31,5 @@ if (process.env.NODE_ENV === 'development') {
 // through the CONTAINER app
 // No GUARANTEE that an element with a id of 'dev-products' exist
 // We DO NOT want to immediately render our app into the element
-export { monut };
+export { mount };
+
