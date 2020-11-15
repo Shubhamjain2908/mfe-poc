@@ -1,1 +1,1 @@
-console.log('COntainer loaded');
+import('./bootstrap');
